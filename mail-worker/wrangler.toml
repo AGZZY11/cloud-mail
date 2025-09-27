@@ -1,4 +1,5 @@
-name = "cloud-mail"
+# mail-worker/wrangler.toml
+name = 'mail'
 main = "src/index.js"
 compatibility_date = "2025-06-04"
 keep_vars = true
@@ -37,3 +38,4 @@ crons = ["0 16 * * *"]	#定时任务每天晚上12点执行
 
 [build]
 command = "pnpm --prefix ../mail-vue install && pnpm --prefix ../mail-vue run build"
+
